@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Global Rules
+   ========================================================================== */
+   
+*, 
+*:before, 
+*:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rosario', sans-serif;
+    min-width: 320px;
+    background: #eee;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearFloat:after,
+.clearFloat:before {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+
+/* ==========================================================================
+   Mobile 320px
+   ========================================================================== */
+
+#h-headerWrapper {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    height: 2.6em;
+}
+
+#h-headerWrapper h1 {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+
+#h-headerWrapper #h-mobileButton {
+    position: absolute;
+    text-decoration: none;
+    font-family: verdana, helvetica, sans-serif;
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 0.9em;
+    left: 0.2em;
+}
+
+#h-headerWrapper #h-mainMenu {
+    display: none;
+}
+
+main {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ma-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    margin: 2em auto 0;
+}
+
+.ma-wrapper .ma-headingImg {
+    width: 100%;
+}
+
+.ma-wrapper > p {
+    font-size: 0.8em;
+}
+
+.ma-wrapper > .ma-bottomLink {
+    text-decoration: none;
+    color: #8f0000;
+    float: right;
+}
+
+.ma-wrapper > .ma-bottomLink:after {
+    font-family: 'FontAwesome';
+    content: '\f138';
+    padding-left: 0.5em;
+}
+
+.ma-wrapper:after,
+.ma-wrapper:before {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#f-footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+
+#f-footer .f-copy {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#f-footer .f-copy span {
+    font-size: 1.2em;
+}
+
+#f-footer p,
+#f-footer a {
+    color: #fff;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+    body {
+        font-size: 125%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    main {
+
+    }
+
+    .ma-wrapper {
+        float: left;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
