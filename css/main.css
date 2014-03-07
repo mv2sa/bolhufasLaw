@@ -39,6 +39,8 @@ body {
    Mobile 320px
    ========================================================================== */
 
+/* header */
+
 #h-headerWrapper {
     position: relative;
     width: 100%;
@@ -104,7 +106,6 @@ body {
     background: -ms-linear-gradient(top,  #000000 25%,#000000 25%,#222222 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #000000 25%,#000000 25%,#222222 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
-
 }
 
 #h-headerWrapper #h-mainMenu li a {
@@ -164,6 +165,8 @@ main {
     height: 0;
 }
 
+/* footer */
+
 #f-footer {
     position: relative;
     display: block;
@@ -202,8 +205,13 @@ main {
 
 @media only screen and (min-width: 768px) {
 
-    main {
+    #h-headerWrapper h1 {
+        width: 10em;
+        display: inline-block;
+    }
 
+    #h-headerWrapper #h-mobileButton {
+        display: none;
     }
 
     .ma-wrapper {
