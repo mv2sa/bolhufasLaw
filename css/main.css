@@ -59,6 +59,7 @@ body {
 #h-headerWrapper h1 a {
     color: inherit;
     text-decoration: inherit;
+    text-shadow: 0.05em 0.05em #666;
 }
 
 #h-headerWrapper #h-mobileButton {
@@ -119,6 +120,7 @@ body {
     line-height: 2em;
     text-decoration: none;
     color: #fff;
+    text-shadow: 0.05em 0.05em #666;
 }
 
 main {
@@ -131,27 +133,34 @@ main {
     position: relative;
     width: 100%;
     background-color: white;
-    padding: 1em 1em 3em;
+    padding: 1em;
     margin: 2em auto 0;
+}
+
+.ma-wrapper > div {
+    position:relative; 
+    overflow: auto; 
+    height: 100%;
 }
 
 .ma-wrapper .ma-headingImg {
     width: 100%;
 }
 
-.ma-wrapper > p {
+.ma-wrapper > div > p {
     font-size: 0.8em;
+    margin-bottom: 2.5em;
 }
 
-.ma-wrapper > .ma-bottomLink {
+.ma-wrapper .ma-bottomLink {
     position: absolute;
     text-decoration: none;
     color: #8f0000;
-    bottom: 1em;
-    right: 1em;
+    bottom: 0;
+    right: 0;
 }
 
-.ma-wrapper > .ma-bottomLink:after {
+.ma-wrapper .ma-bottomLink:after {
     font-family: 'FontAwesome';
     content: '\f138';
     padding-left: 0.5em;
@@ -277,6 +286,11 @@ main {
     .ma-wrapper {
         display: table-cell;
         width: 48%;
+    }
+
+    .ma-rowWrap,
+    .ma-wrapper {
+        height: 100%;
     }
 
     .ma-wrapper.center {
