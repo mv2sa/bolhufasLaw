@@ -139,8 +139,8 @@ main {
 
 .ma-wrapper > div {
     position:relative; 
-    overflow: auto; 
     height: 100%;
+    overflow: hidden;
 }
 
 .ma-wrapper .ma-headingImg {
@@ -156,8 +156,8 @@ main {
     position: absolute;
     text-decoration: none;
     color: #8f0000;
-    bottom: 0;
-    right: 0;
+    bottom: 0.1em;
+    right: 0.1em;
 }
 
 .ma-wrapper .ma-bottomLink:after {
