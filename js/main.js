@@ -4,22 +4,26 @@ $(document).ready(function() {
 		event.preventDefault();
 		GLOBALCONTROLS.mobileMenu();
 	});
+
+	$(window).resize(function(){
+		GLOBALCONTROLS.setPageWidth();
+	});
 	
 });
 
 var GLOBALCONTROLS = {
 
+	pageWidth : window.innerWidth || document.documentElement.clientWidth,
+	isDesktop : false,
 	mobileMenu : function() {
-
 		if(Modernizr.csstransitions === false) {
 			if($('#h-mainMenu').hasClass('active')) {
 				$('#h-mainMenu').removeClass('active');
-				$('#h-mainMenu').slideDown();
+				$('#h-mainMenu').slideUp();
 			} else {
 				$('#h-mainMenu').addClass('active');
-				$('#h-mainMenu').slideUp();
+				$('#h-mainMenu').slideDown();
 			}
-
 		} else {
 			if($('#h-mainMenu').hasClass('active')) {
 				$('#h-mainMenu').removeClass('active');
@@ -27,7 +31,19 @@ var GLOBALCONTROLS = {
 				$('#h-mainMenu').addClass('active');
 			}
 		}
-
+	},
+	setPageWidth : function() {
+		var tempHolder;
+		tempHolder = GLOBALCONTROLS.isDesktop;
+		GLOBALCONTROLS.pageWidth = window.innerWidth || document.documentElement.clientWidth;
+		if (GLOBALCONTROLS.pageWidth > 767) {
+			GLOBALCONTROLS.isDesktop = true;
+		} else {
+			GLOBALCONTROLS.isDesktop = false;
+		}
+		if (tempHolder !== GLOBALCONTROLS.isDesktop && GLOBALCONTROLS.isDesktop === true) {
+			$('.JQueryClear').attr('style', ' ').removeClass('active');
+		}
 	}
 
 };
