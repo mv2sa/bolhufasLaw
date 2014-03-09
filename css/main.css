@@ -129,6 +129,33 @@ main {
     margin: 0 auto;
 }
 
+/* footer */
+
+#f-footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    padding: 0.5em;
+    margin-top: 2em;
+}
+
+#f-footer .f-copy {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#f-footer .f-copy span {
+    font-size: 1.2em;
+}
+
+#f-footer p,
+#f-footer a {
+    color: #fff;
+}
+
+/* Landing Page */
 .ma-wrapper {
     position: relative;
     width: 100%;
@@ -166,31 +193,16 @@ main {
     padding-left: 0.5em;
 }
 
-/* footer */
+/* Attorney Profile Page */
 
-#f-footer {
-    position: relative;
-    display: block;
-    width: 100%;
-    background-color: #000;
-    padding: 0.5em;
-    margin-top: 2em;
-}
 
-#f-footer .f-copy {
-    text-align: center;
-    width: 100%;
-    margin: 0;
-}
+/* Services Page */
 
-#f-footer .f-copy span {
-    font-size: 1.2em;
-}
 
-#f-footer p,
-#f-footer a {
-    color: #fff;
-}
+/* Resources Page */
+
+
+/* Contact Us Page */
 
 /* ==========================================================================
    Media Queries
@@ -276,6 +288,7 @@ main {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#222222',GradientType=0 ); /* IE6-9 */  
     }
 
+    /* Landing Page */
     .ma-rowWrap {
         display: table;
         margin: 1em 0 0;
@@ -283,9 +296,14 @@ main {
         border-spacing: 1em 0;
     }
 
+    .ma-rowWrap.ma-oneItem {
+        width: 50%;
+        margin-left: 25%;
+    }
+
     .ma-wrapper {
         display: table-cell;
-        width: 48%;
+        width: 50%;
     }
 
     .ma-rowWrap,
@@ -296,6 +314,17 @@ main {
     .ma-wrapper.center {
         margin-left: 26%;
     }
+
+    /* Attorney Profile Page */
+
+
+    /* Services Page */
+
+
+    /* Resources Page */
+
+
+    /* Contact Us Page */
 
 
 }
