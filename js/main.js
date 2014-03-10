@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	//bug on table calculations in chrome... rudimentary fix
-	setInterval("$('body').addClass('ready')", 100);
+	setInterval("$('body').addClass('ready')", 150);
 
 	$('#h-mobileButton').click(function(event) {
 		event.preventDefault();
