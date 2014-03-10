@@ -211,6 +211,10 @@ main {
 @media only screen and (min-width: 480px) {
 
     body {
+        font-size: 125.01%;
+    }
+
+    body.ready {
         font-size: 125%;
     }
 
@@ -294,6 +298,7 @@ main {
         margin: 1em 0 0;
         border-collapse: separate;
         border-spacing: 1em 0;
+        width: 100%;
     }
 
     .ma-rowWrap.ma-oneItem {
@@ -304,6 +309,7 @@ main {
     .ma-wrapper {
         display: table-cell;
         width: 50%;
+        margin: 0;
     }
 
     .ma-rowWrap,

@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	//bug on table calculations in chrome... rudimentary fix
+	setInterval("$('body').addClass('ready')", 500);
+
 	$('#h-mobileButton').click(function(event) {
 		event.preventDefault();
 		GLOBALCONTROLS.mobileMenu();
