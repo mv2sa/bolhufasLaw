@@ -168,6 +168,7 @@ main {
     background-color: white;
     padding: 1em;
     margin: 2em auto 0;
+    border: 1px solid #eee;
 }
 
 .ma-wrapper > div {
