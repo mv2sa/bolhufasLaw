@@ -13,7 +13,7 @@
 body {
     font-family: 'Rosario', sans-serif;
     min-width: 320px;
-    background: #eee;
+    background: #eee url(../img/greyzz.png);
 }
 
 @font-face {
@@ -45,21 +45,27 @@ body {
     position: relative;
     width: 100%;
     background-color: #000;
-    height: 2.6em;
+    height: 3em;
 }
 
-#h-headerWrapper h1 {
+#h-headerWrapper h1#logo {
     color: #fff;
     margin: 0;
     text-align: center;
-    font-size: 1.5em;
-    line-height: 1.72em;
+    font-size: 1.3em;
+    line-height: 1em;
+    padding-top: 0.2em;
 }
 
-#h-headerWrapper h1 a {
+#h-headerWrapper h1#logo a {
     color: inherit;
     text-decoration: inherit;
     text-shadow: 0.05em 0.05em #666;
+}
+
+#h-headerWrapper h1#logo a span {
+    display: block;
+    font-size: 0.8em;
 }
 
 #h-headerWrapper #h-mobileButton {
@@ -68,7 +74,7 @@ body {
     font-family: verdana, helvetica, sans-serif;
     color: #fff;
     font-size: 2.5em;
-    line-height: 0.9em;
+    line-height: 1em;
     left: 0.2em;
 }
 
@@ -195,14 +201,27 @@ main {
 
 /* Attorney Profile Page */
 
+.atp-something {
+    
+}
 
 /* Services Page */
 
+.sp-something {
+    
+}
 
 /* Resources Page */
 
+.rp-something {
+    
+}
 
 /* Contact Us Page */
+
+.cup-something {
+    
+}
 
 /* ==========================================================================
    Media Queries
@@ -233,10 +252,12 @@ main {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#000000',GradientType=0 ); /* IE6-9 */  
     }
 
-    #h-headerWrapper h1 {
+    #h-headerWrapper h1#logo {
         width: 10em;
         display: block;
         float: left;
+        text-align: left;
+        margin-left: 0.2em;
     }
 
     #h-headerWrapper:after,
@@ -258,11 +279,12 @@ main {
     .csstransitions #h-headerWrapper #h-mainMenu,
     #h-headerWrapper #h-mainMenu {
         max-height: inherit;
-        display: inline-block;
         width: 80%;
         max-width: 30em;
         font-size: 75%;
         background-color: transparent;
+        display: block;
+        margin: 0 auto;
     }
 
     #h-headerWrapper #h-mainMenu li {
@@ -273,7 +295,7 @@ main {
     }
 
     #h-headerWrapper #h-mainMenu li a {
-        line-height: 3.5em;
+        line-height: 4em;
         border-left: 1px #333 solid;
     }
 
@@ -343,16 +365,15 @@ main {
     }
 
     #h-headerWrapper #h-mainMenu li a {
-        line-height: 2.6em;
+        line-height: 3em;
     }
 
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1240px) {
 
-    .csstransitions #h-headerWrapper #h-mainMenu,
-    #h-headerWrapper #h-mainMenu {
-        margin-left: 4em;
+    #h-headerWrapper h1#logo {
+        position: absolute;
     }
 
 }
