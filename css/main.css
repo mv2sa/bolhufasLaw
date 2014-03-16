@@ -314,9 +314,59 @@ main {
 
 /* Resources Page */
 
-.rp-something {
-    
+.ap-wrapper.main {
+    width: 50%;
 }
+
+.ap-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    margin: 2em auto 0;
+    border: 1px solid #eee;
+}
+
+.ap-wrapper > div {
+    position:relative; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.ap-wrapper .s-headingImg {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ap-wrapper > div > p {
+    font-size: 0.8em;
+    margin-bottom: 0em;
+}
+
+.ap-wrapper .ap-bottomLink {
+    position: absolute;
+    text-decoration: none;
+    color: #8f0000;
+    bottom: 0.1em;
+    right: 0.1em;
+}
+
+.ap-wrapper .ap-bottomLink:after {
+    font-family: 'FontAwesome';
+    content: '\f138';
+    padding-left: 0.5em;
+}
+#s-titleChild {
+    text-align: center;
+    font-size: 1.5em;
+}
+.ap-title {
+    text-align: center;
+    font-size: 2.5em;
+}
+
 
 /* Contact Us Page */
 
