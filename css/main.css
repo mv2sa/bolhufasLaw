@@ -94,10 +94,10 @@ body {
 .csstransitions #h-headerWrapper #h-mainMenu {
     display: block;
     max-height: 0;
-    -webkit-transition:  max-height 1s;
-    -moz-transition: -moz-transform max-height 1s;
-    -o-transition: -o-transform max-height 1s;
-    transition: transform max-height 1s;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
 }
