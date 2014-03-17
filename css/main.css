@@ -159,6 +159,8 @@ main {
 #f-footer p,
 #f-footer a {
     color: #fff;
+    text-decoration: none;
+    word-spacing: 1em;
 }
 
 /* Landing Page */
