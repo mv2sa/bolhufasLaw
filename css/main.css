@@ -45,7 +45,7 @@ body {
     position: relative;
     width: 100%;
     background-color: #000;
-    height: 3em;
+    height: 5em;
 }
 
 #h-headerWrapper h1#logo {
@@ -61,6 +61,7 @@ body {
     color: inherit;
     text-decoration: inherit;
     text-shadow: 0.05em 0.05em #666;
+    letter-spacing: 0.1em;
 }
 
 #h-headerWrapper h1#logo a span {
