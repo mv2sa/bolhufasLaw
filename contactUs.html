@@ -104,15 +104,17 @@
                         google.maps.event.addDomListener(window, 'load', initialize);
                     </script>
                     <form action="contact.php" method="POST">
-                        <input type="action" name="name" value="submit"/> Your Name:<br />
+                        <input type="action" name="name" value=""/> Your Name:<br />
                         <input type="text" name="email" value="" size="30"/> Your Email:<br />
-                        <input type="text" name="subject" value="submit"/> Subject:<br />
+                        <input type="text" name="subject" /> Subject:<br />
                         <select name="dropdown">
+                            <option value="pick">Pick One</option>
                             <option value="case">Case Status</option>
                             <option value="help">Help</option>
                             <option value="law">Law</option>
                         </select>
-                        <textarea type="message" name="message" rows="5" cols="35"/>:<br />
+                        <textarea type="message" name="message" rows="5" cols="35"/>
+                    </form>
                 </div>
             </article>
         </main>
@@ -121,12 +123,6 @@
 
             <p class="f-copy">
                 <span>&copy;</span> Copyright 2014
-                <br>
-                <a href="index.html">Home</a>
-                <a href="attorneyProfile.html">Attorney Profile</a>
-                <a href="service.html">Services</a>
-                <a href="resources.html">Resources</a>
-                <a href="contactUs.html">Contact</a>
             </p>
         </footer>
 
