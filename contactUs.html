@@ -103,18 +103,27 @@
 
                         google.maps.event.addDomListener(window, 'load', initialize);
                     </script>
-                    <form action="contact.php" method="POST">
-                        <input type="action" name="name" value=""/> Your Name:<br />
-                        <input type="text" name="email" value="" size="30"/> Your Email:<br />
-                        <input type="text" name="subject" /> Subject:<br />
-                        <select name="dropdown">
-                            <option value="pick">Pick One</option>
-                            <option value="case">Case Status</option>
-                            <option value="help">Help</option>
-                            <option value="law">Law</option>
-                        </select>
-                        <textarea type="message" name="message" rows="5" cols="35"/>
-                    </form>
+                    <div id="googleMap"></div>
+                    <div class="form">
+                        <form action="contact.php" method="POST">
+                            <fieldset>
+                                <input type="action" name="name" value="Name"/><br />
+                                <input type="text" name="email" value="Email" size="30"/><br />
+                                <input type="text" name="subject" value="Subject" /><br />
+                                <br>
+                                <select name="dropdown">
+                                    <option value="pick">Pick One</option>
+                                    <option value="case">Case Status</option>
+                                    <option value="help">Help</option>
+                                    <option value="law">Law</option>
+                                </select>
+                                </br>
+                                Message
+                                <textarea type="message" name="message" rows="7" cols="50"></textarea>
+                                <input type="submit" value="Send Message" />
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </article>
         </main>

@@ -419,10 +419,52 @@ main {
     text-align: center;
     font-size: 2.5em;
 }
+.form  body, div, h1, fieldset, input, textarea{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-align: left;
 
-    
 }
-
+.form html {
+    height: 100%;
+}
+.form body {
+    background: #fff;
+    background: -moz-linear-gradient(top, #25303C 0%, #728EAA 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color: #000000);
+    font-family: sans-serif;
+}
+.form {
+    width: 430px;
+    margin: 60px auto;
+    padding: 60px 30px;
+    background: #c9d0de;
+    border: 1px solid #e1e1e1;
+    -moz-box-shadow: 0px 0px 8px #444;
+    -webkit-box-shadow: 0px 0px 8px #444;
+}
+.form input {
+    width: 260px;
+    height: 35px;
+    padding: 5px 20px 0px 20px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+}
+textarea {
+    width: 260px;
+    height: 170px;
+    padding: 12px 20px 0px 20px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    font-family: sans-serif;
+    color: #000;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
