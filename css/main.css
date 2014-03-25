@@ -465,6 +465,23 @@ textarea {
     font-family: sans-serif;
     color: #000;
 }
+.contact {
+    text-align: center;
+}
+.form h3 {
+    text-align: left;
+}
+.button {
+    width: 150px;
+    height: 35px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -622,6 +639,15 @@ textarea {
 
 
     /* Contact Us Page */
+    .form {
+    width: 430px;
+    margin: 60px auto;
+    padding: 60px 30px;
+    background: #c9d0de;
+    border: 1px solid #e1e1e1;
+    -moz-box-shadow: 0px 0px 8px #444;
+    -webkit-box-shadow: 0px 0px 8px #444;
+    }
 
 
 }

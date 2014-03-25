@@ -87,30 +87,30 @@
             <h2 class="ap-title">Contact Us</h2>
             <article class="ap-wrapper">
                 <div>
-                    <h3>Where To Find Us:</h3>
-                    <script src="https://www.google.com/maps/dir//588+Natoma+St,+San+Francisco,+CA+94103/@37.7785207,-122.4096755,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x808580839ee2d4d7:0x86262639b5b5e153!2m2!1d-122.4097506!2d37.778826!3e4"></script>
-                    <script>
-                        function initialize()
-                        {
-                        var mapProp = {
-                          center:new google.maps.LatLng(51.508742,-0.120850),
-                          zoom:5,
-                          mapTypeId:google.maps.MapTypeId.ROADMAP
-                          };
-                        var map=new google.maps.Map(document.getElementById("googleMap")
-                          ,mapProp);
-                        }
+                    <div class="form">
+                        <h3>Where To Find Us:</h3>
+                        <script src="https://www.google.com/maps/dir//588+Natoma+St,+San+Francisco,+CA+94103/@37.7785207,-122.4096755,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x808580839ee2d4d7:0x86262639b5b5e153!2m2!1d-122.4097506!2d37.778826!3e4"></script>
+                        <script>
+                            function initialize()
+                            {
+                            var mapProp = {
+                              center:new google.maps.LatLng(51.508742,-0.120850),
+                              zoom:5,
+                              mapTypeId:google.maps.MapTypeId.ROADMAP
+                              };
+                            var map=new google.maps.Map(document.getElementById("googleMap")
+                              ,mapProp);
+                            }
 
-                        google.maps.event.addDomListener(window, 'load', initialize);
+                            google.maps.event.addDomListener(window, 'load', initialize);
                     </script>
                     <div id="googleMap"></div>
-                    <div class="form">
                         <form action="contact.php" method="POST">
                             <fieldset>
+                                <h3>Send Us An Email</h3>
                                 <input type="action" name="name" value="Name"/><br />
                                 <input type="text" name="email" value="Email" size="30"/><br />
                                 <input type="text" name="subject" value="Subject" /><br />
-                                <br>
                                 <select name="dropdown">
                                     <option value="pick">Pick One</option>
                                     <option value="case">Case Status</option>
@@ -118,9 +118,10 @@
                                     <option value="law">Law</option>
                                 </select>
                                 </br>
-                                Message
-                                <textarea type="message" name="message" rows="7" cols="50"></textarea>
-                                <input type="submit" value="Send Message" />
+                                <br>
+                                <textarea type="message" name="message" value="Message" rows="7" cols="50"></textarea>
+                                    <input class="button" type="submit" value="Send Message" />
+                                    <input class="button" type="submit" value="Reset" />
                             </fieldset>
                         </form>
                     </div>
