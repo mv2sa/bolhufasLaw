@@ -216,6 +216,10 @@ ul#breadcrumbs li a:hover{
     border: 1px solid #eee;
 }
 
+.ma-separator {
+    display: none;
+}
+
 .ma-wrapper > div {
     position:relative; 
     height: 100%;
@@ -598,8 +602,6 @@ ul#breadcrumbs li a:hover{
     .ma-rowWrap {
         display: table;
         margin: 1em 0 0;
-        border-collapse: separate;
-        border-spacing: 1em 0;
         width: 100%;
     }
 
@@ -610,8 +612,7 @@ ul#breadcrumbs li a:hover{
 
     .ma-wrapper {
         display: table-cell;
-        width: 50%;
-        margin: 0;
+        width: 49%;
     }
 
     .ma-rowWrap,
@@ -621,6 +622,11 @@ ul#breadcrumbs li a:hover{
 
     .ma-wrapper.center {
         margin-left: 26%;
+    }
+
+    .ma-separator {
+        display: table-cell;
+        width: 1%;
     }
 
     /* Attorney Profile Page */
