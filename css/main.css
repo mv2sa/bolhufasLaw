@@ -489,7 +489,6 @@ ul#breadcrumbs li a:hover{
     height: 35px;
     margin: 0 0 20px 0;
     background: #fff;
-    font-family: sans-serif;
     font-size: 16px;
     color: #000;
     text-align: left;
@@ -498,10 +497,10 @@ ul#breadcrumbs li a:hover{
 #send {
     color: #000;
     width: 135px;
-    height: 60px;
+    height: 50px;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
-    margin: 0;
+    margin-left: 50px;
     padding: 0;
     background: #fff;
     display: block;
@@ -661,6 +660,39 @@ ul#breadcrumbs li a:hover{
 
 
     /* Contact Us Page */
+    #send {
+        color: #000;
+        width: 135px;
+        height: 50px;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        margin-left: 20px;
+        padding: 0;
+        background: #fff;
+        display: inline-block;
+        text-align: center;
+    }
+    .form textarea {
+        width: 768px;
+        height: 170px;
+        padding: 12px 20px 0px 20px;
+        margin: 0 0 20px 0;
+        background: #fff;
+        color: #000;
+        border: 1px solid #e8e8e8;
+    }
+    .form input {
+        width: 260px;
+        height: 35px;
+        padding: 5px 20px 0px 20px;
+        margin: 0 0 20px 0;
+        background: #fff;
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        border: 1px solid #e8e8e8;
+        display: block;
+    }
 
 
 }
