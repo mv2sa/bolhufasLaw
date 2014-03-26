@@ -89,6 +89,7 @@
                 <div>
                     <div class="form">
                         <h3>Where To Find Us:</h3>
+                        <img class="ap-headingImg" src="img/heading3.jpg" alt="San Francisco">
                         <script src="https://www.google.com/maps/dir//588+Natoma+St,+San+Francisco,+CA+94103/@37.7785207,-122.4096755,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x808580839ee2d4d7:0x86262639b5b5e153!2m2!1d-122.4097506!2d37.778826!3e4"></script>
                         <script>
                             function initialize()
@@ -110,18 +111,17 @@
                                 <h3>Send Us An Email</h3>
                                 <input type="action" name="name" value="Name"/><br />
                                 <input type="text" name="email" value="Email" size="30"/><br />
-                                <input type="text" name="subject" value="Subject" /><br />
                                 <select name="dropdown">
-                                    <option value="pick">Pick One</option>
+                                    <option value="pick">Subject</option>
                                     <option value="case">Case Status</option>
                                     <option value="help">Help</option>
                                     <option value="law">Law</option>
                                 </select>
-                                </br>
-                                <br>
+                                <h4>Message</h4>
                                 <textarea type="message" name="message" value="Message" rows="7" cols="50"></textarea>
-                                    <input class="button" type="submit" value="Send Message" />
-                                    <input class="button" type="submit" value="Reset" />
+                                    <input type="submit" value="Send Message" id="send" />
+                                    <br>
+                                    <input type="submit" value="Reset" id="send" />
                             </fieldset>
                         </form>
                     </div>

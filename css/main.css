@@ -411,10 +411,6 @@ main {
     content: '\f138';
     padding-left: 0.5em;
 }
-#s-titleChild {
-    text-align: center;
-    font-size: 1.5em;
-}
 .ap-title {
     text-align: center;
     font-size: 2.5em;
@@ -436,15 +432,6 @@ main {
     background: -webkit-gradient(linear, left top, left bottom, color: #000000);
     font-family: sans-serif;
 }
-.form {
-    width: 430px;
-    margin: 60px auto;
-    padding: 60px 30px;
-    background: #c9d0de;
-    border: 1px solid #e1e1e1;
-    -moz-box-shadow: 0px 0px 8px #444;
-    -webkit-box-shadow: 0px 0px 8px #444;
-}
 .form input {
     width: 260px;
     height: 35px;
@@ -455,6 +442,7 @@ main {
     font-size: 16px;
     color: #000;
     text-align: left;
+    border: 1px solid #e8e8e8;
 }
 textarea {
     width: 260px;
@@ -464,6 +452,7 @@ textarea {
     background: #fff;
     font-family: sans-serif;
     color: #000;
+    border: 1px solid #e8e8e8;
 }
 .contact {
     text-align: center;
@@ -481,6 +470,18 @@ textarea {
     color: #000;
     text-align: left;
 
+}
+#send {
+    color: #000;
+    width: 135px;
+    height: 60px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: block;
+    text-align: center;
 }
 /* ==========================================================================
    Media Queries
@@ -639,15 +640,6 @@ textarea {
 
 
     /* Contact Us Page */
-    .form {
-    width: 430px;
-    margin: 60px auto;
-    padding: 60px 30px;
-    background: #c9d0de;
-    border: 1px solid #e1e1e1;
-    -moz-box-shadow: 0px 0px 8px #444;
-    -webkit-box-shadow: 0px 0px 8px #444;
-    }
 
 
 }
