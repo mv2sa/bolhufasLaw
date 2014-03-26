@@ -515,10 +515,6 @@ ul#breadcrumbs li a:hover{
 @media only screen and (min-width: 480px) {
 
     body {
-        font-size: 125.01%;
-    }
-
-    body.ready {
         font-size: 125%;
     }
 
