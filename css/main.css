@@ -699,6 +699,9 @@ ul#breadcrumbs li a:hover{
         border: 1px solid #e8e8e8;
         display: block;
     }
+    .form h3 {
+        text-align: center;
+    }
 
 
 }
