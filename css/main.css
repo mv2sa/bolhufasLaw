@@ -470,15 +470,14 @@ main {
 /*BreadCrumb*/
 .breadcrumb {
     position:relative; 
-    height:30px; 
+    height:40px; 
     width:100%;
 }
 .breadcrumb ul {
     position:relative; 
-    margin:0 5px 0 550px; 
+    margin:0 5px 0 5px; 
     padding:0; 
     height:30px; 
-    background:url('breadcrumbImage.png') 0px -30px repeat-x; 
 }
 .breadcrumb ul li {
     padding:0; 
@@ -489,12 +488,11 @@ main {
     display:inline;
 }
 .breadcrumb ul li a {
-    font:12px Arial, Helvetica, sans-serif;
+     font:12px Arial, Helvetica, sans-serif;
      color:rgb(255,255,255); 
      text-decoration:none; 
      line-height:30px; 
-     display:block; 
-     background:url('breadcrumbImage.png') 100% -60px no-repeat; 
+     display:block;
      padding:0 17px 0 15px;
 }
 .breadcrumb ul li a:hover {
@@ -516,7 +514,6 @@ main {
     height:30px; 
     display:block; 
     z-index:1; 
-    background:url('breadcrumbImage.png') 0% 0px no-repeat;
 }
 .breadcrumb .right {
     position:absolute; 
@@ -525,8 +522,7 @@ main {
     width:10px; 
     height:30px; 
     display:block; 
-    z-index:1; 
-    background:url('breadcrumbImage.png') 100% -90px no-repeat; 
+    z-index:1;
 }
 
 /* ==========================================================================
@@ -719,6 +715,13 @@ main {
     }
     .form h3 {
         text-align: center;
+    }
+/*BreadCrumb*/
+    .breadcrumb ul {
+        position:relative; 
+        margin:0 5px 0 550px; 
+        padding:0; 
+        height:30px; 
     }
 
 
