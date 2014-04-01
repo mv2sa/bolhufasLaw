@@ -469,27 +469,26 @@ main {
     display: block;
     text-align: center;
 }
-/*BreadCrumb*/
-.breadcrumb {
+/*Footer Navigation*/
+.f-footernav {
     position:relative; 
-    height:40px; 
+    height:135px; 
     width:100%;
 }
-.breadcrumb ul {
+.f-footernav ul {
     position:relative; 
     margin:0 5px 0 5px; 
     padding:0; 
     height:30px; 
 }
-.breadcrumb ul li {
+.f-footernav ul li {
     padding:0; 
     margin:0; 
-    list-style:none; 
-    float:left; 
+    list-style:none;
     height:30px; 
-    display:inline;
+    display:block;
 }
-.breadcrumb ul li a {
+.f-footernav ul li a {
      font:12px Arial, Helvetica, sans-serif;
      color:rgb(255,255,255); 
      text-decoration:none; 
@@ -497,18 +496,18 @@ main {
      display:block;
      padding:0 17px 0 15px;
 }
-.breadcrumb ul li a:hover {
+.f-footernav ul li a:hover {
     text-decoration:underline; 
     color:rgb(255,255,255);
 }
-.breadcrumb ul li a.active {
+.f-footernav ul li a.active {
     background:none; 
     color:rgb(250,247,247);
 }
-.breadcrumb ul li a.active:hover {
+.f-footernav ul li a.active:hover {
     text-decoration:none;
 }
-.breadcrumb .left {
+.f-footernav .left {
     position:absolute; 
     top:0px; 
     left:0px; 
@@ -517,7 +516,7 @@ main {
     display:block; 
     z-index:1; 
 }
-.breadcrumb .right {
+.f-footernav .right {
     position:absolute; 
     top:0px; 
     right:0px; 
@@ -718,12 +717,18 @@ main {
     .form h3 {
         text-align: center;
     }
-/*BreadCrumb*/
-    .breadcrumb ul {
+/*Footer Navigation*/
+    .f-footernav ul {
         position:relative; 
         margin:0 5px 0 550px; 
         padding:0; 
-        height:30px; 
+        height:30px;
+    }
+    .f-footernav {
+    position:relative; 
+    height:135px; 
+    width:100%;
+    margin-left: -272px;
     }
     /* footer */
     #f-footer {
