@@ -131,7 +131,7 @@ body {
 
 main {
     position: relative;
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
 }
 
@@ -421,7 +421,7 @@ main {
     font-size: 2.5em;
 }
 .form input {
-    width: 260px;
+    width: 215px;
     height: 35px;
     padding: 5px 20px 0px 20px;
     margin: 0 0 20px 0;
@@ -432,7 +432,7 @@ main {
     border: 1px solid #e8e8e8;
 }
 .form textarea {
-    width: 260px;
+    width: 217px;
     height: 170px;
     padding: 12px 20px 0px 20px;
     margin: 0 0 20px 0;
@@ -457,14 +457,26 @@ main {
 
 }
 #send {
-    color: #000;
+    color: #fff;
     width: 135px;
     height: 50px;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     margin-left: 50px;
     padding: 0;
-    background: #fff;
+    background: #217216;
+    display: block;
+    text-align: center;
+}
+#reset {
+    color: #fff;
+    width: 135px;
+    height: 50px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin-left: 50px;
+    padding: 0;
+    background: #D3352A;
     display: block;
     text-align: center;
 }
@@ -538,6 +550,12 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+
+    main {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    }
 
     #h-headerWrapper {
         background: #000000; /* Old browsers */
@@ -680,16 +698,28 @@ main {
 
 
     /* Contact Us Page */
-    #send {
-        color: #000;
+   #send {
+    color: #fff;
+    width: 135px;
+    height: 50px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin-left: 50px;
+    padding: 0;
+    background: #217216;
+    display: block;
+    text-align: center;
+    }
+    #reset {
+        color: #fff;
         width: 135px;
         height: 50px;
         border: 1px solid #e8e8e8;
         border-radius: 5px;
-        margin-left: 20px;
+        margin-left: 50px;
         padding: 0;
-        background: #fff;
-        display: inline-block;
+        background: #D3352A;
+        display: block;
         text-align: center;
     }
     .form textarea {
