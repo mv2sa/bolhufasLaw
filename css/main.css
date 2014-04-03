@@ -707,7 +707,7 @@ main {
     margin-left: 50px;
     padding: 0;
     background: #217216;
-    display: block;
+    display: inline-block;
     text-align: center;
     }
     #reset {
@@ -719,7 +719,7 @@ main {
         margin-left: 50px;
         padding: 0;
         background: #D3352A;
-        display: block;
+        display: inline-block;
         text-align: center;
     }
     .form textarea {
