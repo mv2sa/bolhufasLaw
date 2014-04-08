@@ -666,57 +666,35 @@ main {
         margin-right: auto;
     }
 
-
     /* Contact Us Page */
-   #send {
-    color: #fff;
-    width: 135px;
-    height: 50px;
-    border: 1px solid #e8e8e8;
-    border-radius: 5px;
-    margin-left: 50px;
-    padding: 0;
-    background: #217216;
-    display: inline-block;
-    text-align: center;
-    }
-    #reset {
-        color: #fff;
-        width: 135px;
-        height: 50px;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
-        margin-left: 50px;
-        padding: 0;
-        background: #D3352A;
-        display: inline-block;
-        text-align: center;
-    }
-    .form textarea {
-        width: 768px;
-        height: 170px;
-        padding: 12px 20px 0px 20px;
-        margin: 0 0 20px 0;
-        background: #fff;
-        color: #000;
-        border: 1px solid #e8e8e8;
-    }
-    .form input {
-        width: 260px;
-        height: 35px;
-        padding: 5px 20px 0px 20px;
-        margin: 0 0 20px 0;
-        background: #fff;
-        font-size: 16px;
-        color: #000;
-        text-align: left;
-        border: 1px solid #e8e8e8;
-        display: block;
-    }
     .form h3 {
         text-align: center;
     }
-
+    #cu-formAddress {
+        text-align: center;
+    }
+    .cu-form input {
+        width: 30%;
+        margin-left: 16em;
+    }
+    #cu-formDrop {
+        width: 30%;
+        margin-left: 16em;
+    }
+    .cu-form textarea {
+        width: 50%;
+        height: 14em;
+        margin-left: 11em; 
+    }
+    .cu-emailBtn {
+        display: block;
+        width: 70%;
+        height: 4em;
+        padding: 0 0 5em 0;
+    }
+    .cu-form h4 {
+        text-align: center;
+    }
     /* footer */
     #f-footer {
         position: relative;
