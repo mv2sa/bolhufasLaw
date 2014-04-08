@@ -682,9 +682,8 @@ main {
         margin-left: 16em;
     }
     .cu-form textarea {
-        width: 50%;
-        height: 14em;
-        margin-left: 11em; 
+        width: 100%;
+        height: 14em; 
     }
     .cu-emailBtn {
         display: block;
@@ -693,7 +692,7 @@ main {
         padding: 0 0 5em 0;
     }
     .cu-form h4 {
-        text-align: center;
+        text-align: left;
     }
     /* footer */
     #f-footer {
