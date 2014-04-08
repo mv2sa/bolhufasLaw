@@ -101,9 +101,9 @@
                         <form action="contact.php" method="POST">
                             <fieldset>
                                 <h3>Send Us An Email</h3>
-                                <input type="action" name="name" value="Name"/>
-                                <input type="text" name="email" value="Email" size="30"/>
-                                <select name="dropdown" id="cu-formDrop">
+                                <input type="action" name="name" placeholder="Name" class="cu-field" />
+                                <input type="text" name="email" placeholder="Email" class="cu-field" />
+                                <select name="dropdown" id="cu-formDrop" class="cu-field">
                                     <option value="pick">Subject</option>
                                     <option value="case">Case Status</option>
                                     <option value="help">Help</option>
@@ -112,8 +112,8 @@
                                 <h4>Message</h4>
                                 <textarea type="message" name="message" value="Message" rows="7" cols="50"></textarea>
                                 <div class="cu-emailBtn">
-                                    <input type="submit" value="Send Message" id="cu-send" /> 
-                                    <input type="submit" value="Reset" id="cu-reset" />
+                                    <input type="submit" value="Send Message" id="cu-send" class="cu-button" /> 
+                                    <input type="submit" value="Reset" id="cu-reset" class="cu-button" />
                             </fieldset>
                         </form>
                     </div>
