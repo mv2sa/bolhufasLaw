@@ -425,6 +425,16 @@ main {
     height: 20em;
     border: 1px #bbb dashed;
 }
+#cu-mapParking {
+    font-size: 0.8em;
+    line-height: 0.8;
+    margin-top: 0.1em;
+    display: block;
+    color: #14bb00;
+}
+#cu-formAddress {
+    margin-top: 0.5em;
+}
 .cu-form .cu-field {
     display: block;
     width: 100%;
