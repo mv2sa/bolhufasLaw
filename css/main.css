@@ -135,6 +135,28 @@ main {
     margin: 0 auto;
 }
 
+#globalBackToTop {
+    position: absolute;
+    display: none;
+    right: 5px;
+    text-align: center;
+    z-index: 1000;
+}
+#globalBackToTop a {
+    text-decoration: none;
+    color: #8f0000;
+    font-size: 2em;
+}
+#globalBackToTop a:before {
+    content: "\f0aa";
+    display: inline-block;
+    font-family: "FontAwesome";
+    background-color: #fff;
+    border-radius: 0.4em;
+    height: 0.7em;
+    line-height: 0.74em;
+}
+
 /* footer */
 
 #f-footer {
