@@ -21,6 +21,8 @@ $(document).ready(function() {
 		}
 	});
 
+	GLOBALCONTROLS.setPageWidth();
+
 	$(window).resize(function(){
 		GLOBALCONTROLS.setPageWidth();
 	});
