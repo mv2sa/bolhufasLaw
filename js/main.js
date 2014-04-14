@@ -98,7 +98,7 @@ var GLOBALCONTROLS = {
 		}
 	},
 	backToTop : function() {
-		$("html").animate({
+		$("body,html").animate({
 		      scrollTop: 0
 		 },500, "swing");
 	}
