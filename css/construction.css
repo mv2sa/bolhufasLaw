@@ -284,20 +284,23 @@ main {
      padding:0 17px 0 15px;
 }
 /*Construction Page*/
-#page {
+#cp-page {
     margin: 4em;
 }
-#page h1 {
-    font-size: 2em;
+#cp-page h2 {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 0.5em;
     color: #000;
 }
-#page h3 {
+#cp-page h3 {
     margin: 0 auto;
     text-align: center;
     color: #000;
+}
+#cp-email {
+    text-align: center;
+    text-decoration: none;
 }
 
 /* ==========================================================================
@@ -494,7 +497,7 @@ main {
     .f-footernav ul li {
         float: left;
     }
-    #page {
+    #cp-page {
     margin: 11em;
 }
 
