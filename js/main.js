@@ -9,18 +9,6 @@ $(document).ready(function() {
 		GLOBALCONTROLS.backToTop();
 	});
 
-	$('#cu-mapParking').click(function(event) {
-		event.preventDefault();
-		var map = $('#cu-map');
-		if(map.hasClass('cu-normalMap')) {
-			map.replaceWith('<iframe id="cu-map" class="cu-parkingMap" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD0gaXs9dAemZB7wXh-QWblUhK1tleHb0g&q=parking+near+420+3rd+street+suite+200,Oakland,CA,USA&zoom=15&center=37.796571,-122.275254"></iframe>');
-			$('#cu-mapParking').text('Back to normal view?');
-		} else {
-			map.replaceWith('<iframe id="cu-map" class="cu-normalMap" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD0gaXs9dAemZB7wXh-QWblUhK1tleHb0g&q=420+3rd+street+suite+200,Oakland,CA,USA&zoom=11"></iframe>');
-			$('#cu-mapParking').text('Looking for parking?');
-		}
-	});
-
 	GLOBALCONTROLS.setPageWidth();
 
 	$(window).resize(function(){

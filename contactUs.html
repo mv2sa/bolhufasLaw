@@ -34,9 +34,10 @@
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
         <!--<![endif]-->
-       
+        <script src="js/vendor/jquery.validate.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/contactUs.js"></script>
     </head>
     <body>
         <!--[if lte IE 8]>
@@ -101,19 +102,21 @@
                             Fax: (781)488-9855 <br>
                             Email: bholhufasLaw@yahoo.com
                         </p>
-                        <form action="contact.php" method="POST">
+                        <form id="cu-emailForm" action="contact.php" method="POST">
                             <fieldset>
                                 <h3>Send Us An Email</h3>
-                                <input type="action" name="name" placeholder="Name" class="cu-field" />
-                                <input type="text" name="email" placeholder="Email" class="cu-field" />
-                                <select name="dropdown" id="cu-formDrop" class="cu-field">
+                                <input type="text" name="name" placeholder="Name" class="cu-field" />
+                                <input name="email" type="email" placeholder="Email" class="cu-field" />
+                                <select name="subject" id="cu-formDrop" class="cu-field">
                                     <option value="pick">Subject</option>
                                     <option value="case">Case Status</option>
                                     <option value="help">Help</option>
                                     <option value="law">Law</option>
+                                    <option value="other">Other</option>
                                 </select>
+                                <input type="text" id="cu-otherSubject" name="writeSubject" placeholder="Write your own subject" class="cu-field" />
                                 <h4>Message</h4>
-                                <textarea type="message" name="message" value="Message" rows="7" cols="50"></textarea>
+                                <textarea type="text" name="message" value="Message" rows="7" cols="50"></textarea>
                                 <div class="cu-emailBtn">
                                     <input type="submit" value="Send Message" id="cu-send" class="cu-button" /> 
                                     <input type="submit" value="Reset" id="cu-reset" class="cu-button" />

@@ -469,6 +469,9 @@ main {
     margin-bottom: 1em;
     padding: 0.1em;
 }
+#cu-otherSubject {
+    display: none;
+}
 .cu-form .cu-button {
     width: 100%;
     font-size: 1em; 
