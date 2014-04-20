@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	$('#cu-emailForm').on('change', '#cu-formDrop', function(event) {
-		var other = $('#cu-otherSubject');
+		var other = $('#cu-otherSubjectWrapper');
 		var selected = $(this).val();
 		if(selected === 'other' && CONTACTUS.otherSubject === false) {
 			CONTACTUS.otherSubject = true;
@@ -31,6 +31,7 @@ $(document).ready(function() {
 
 	$("#cu-emailForm").validate({
 		debug : true,
+		errorElement : 'p',
 		rules : {
 			name : {
 				required : true
@@ -57,7 +58,7 @@ $(document).ready(function() {
 		},
 		messages : {
 			name : {
-				required : 'Hello, we think you might have forgot to tell us your name.'
+				required : 'Hello, we think you might have forgotten to tell us your name.'
 			},
 			email : {
 				required : 'We noticed that the email address is blank, it is important for us to reach back to you.',
@@ -76,7 +77,7 @@ $(document).ready(function() {
 			}
 		},
   		submitHandler: function(form) {
-  			alert('here');
+  			//alert('here');
     		form.submit();
   		}
  	});

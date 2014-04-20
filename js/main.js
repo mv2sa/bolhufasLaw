@@ -27,19 +27,20 @@ var GLOBALCONTROLS = {
 	isDesktop : false,
 	mobileScrollUp : false,
 	mobileMenu : function() {
+		var element = $('#h-mainMenu');
 		if(Modernizr.csstransitions === false) {
-			if($('#h-mainMenu').hasClass('active')) {
-				$('#h-mainMenu').removeClass('active');
-				$('#h-mainMenu').slideUp();
+			if(element.hasClass('active')) {
+				element.removeClass('active');
+				element.slideUp();
 			} else {
-				$('#h-mainMenu').addClass('active');
-				$('#h-mainMenu').slideDown();
+				element.addClass('active');
+				element.slideDown();
 			}
 		} else {
-			if($('#h-mainMenu').hasClass('active')) {
-				$('#h-mainMenu').removeClass('active');
+			if(element.hasClass('active')) {
+				element.removeClass('active');
 			} else {
-				$('#h-mainMenu').addClass('active');
+				element.addClass('active');
 			}
 		}
 	},
