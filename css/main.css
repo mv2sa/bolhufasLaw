@@ -473,7 +473,7 @@ main {
 .cu-form .cu-field {
     display: block;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     padding: 0.1em;
 }
 #cu-otherSubjectWrapper {
@@ -691,10 +691,16 @@ main {
     #cu-formAddress {
         text-align: center;
     }
+    .cu-labelIE9 {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        min-width: 19em;
+    }
     .cu-form .cu-field {
         width: 50%;
         min-width: 16em;
-        margin: 1em auto;
+        margin: 0.5em auto;
         font-size: 1.2em;
     }
     .cu-form textarea {

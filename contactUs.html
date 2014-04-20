@@ -105,7 +105,13 @@
                         <form id="cu-emailForm" action="contact.php" method="POST">
                             <fieldset>
                                 <h3>Send Us An Email</h3>
+                                <!--[if lte IE 9]>
+                                    <label for="name" class="cu-labelIE9">Name:</label>
+                                <![endif]-->
                                 <input type="text" name="name" placeholder="Name" class="cu-field" />
+                                <!--[if lte IE 9]>
+                                    <label for="email" class="cu-labelIE9">E-mail:</label>
+                                <![endif]-->
                                 <input name="email" type="email" placeholder="Email" class="cu-field" />
                                 <select name="subject" id="cu-formDrop" class="cu-field">
                                     <option value="pick">Subject</option>
@@ -115,9 +121,12 @@
                                     <option value="other">Other</option>
                                 </select>
                                 <div id="cu-otherSubjectWrapper">
+                                    <!--[if lte IE 9]>
+                                        <label for="writeSubject" class="cu-labelIE9">Write your own subject:</label>
+                                    <![endif]-->
                                     <input type="text" id="cu-otherSubject" name="writeSubject" placeholder="Write your own subject" class="cu-field" />
                                 </div>
-                                <h4>Message</h4>
+                                <h4><label for="message">Message</label></h4>
                                 <textarea type="text" name="message" value="Message" rows="7" cols="50"></textarea>
                                 <div class="cu-emailBtn">
                                     <input type="submit" value="Send Message" id="cu-send" class="cu-button" /> 
