@@ -1,11 +1,11 @@
 <footer id="f-footer">
     <div class="f-footernav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="attorneyProfile.html">Attorney Profile</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="resources.html" class="active">Resources</a></li>
-        <li><a href="contactUs.html" class="active">Contact Us</a></li>
+        <li><a href="home">Home</a></li>
+        <li><a href="attorney-profile">Attorney Profile</a></li>
+        <li><a href="services" class="active">Services</a></li>
+        <li><a href="resources" class="active">Resources</a></li>
+        <li><a href="contact-us" class="active">Contact Us</a></li>
       </ul>
     </div>
     <span>&copy;</span> Copyright 2014

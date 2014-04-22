@@ -13,9 +13,7 @@
         </div>
         <main>
         <?php
-            if ($page == "home" OR $page == ""){
-                include('content/home.html');
-            } elseif (file_exists('content/'.$page.'.html')) {
+            if (file_exists('content/'.$page.'.html')) {
                 include('content/'.$page.'.html');
             } elseif (!file_exists('content/'.$page.'.html')) {
                 include('content/404.html');
