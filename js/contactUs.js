@@ -77,11 +77,38 @@ $(document).ready(function() {
 			}
 		},
   		submitHandler: function(form) {
-  			//alert('here');
-    		form.submit();
-  		}
- 	});
-	
+  			var name, email, subject, message, json;
+  			name = $(form).find('#cu-formName').val();
+  			email = $(form).find('#cu-formEmail').val();
+  			if(CONTACTUS.otherSubject) {
+  				subject = $(form).find('#cu-otherSubject').val();
+  			} else {
+  				subject = $(form).find('#cu-formDrop').val();
+  			}
+  			message = $(form).find('#cu-formMessage').val();
+  			json = {
+  				'name' : name,
+  				'email' : email,
+  				'subject' : subject,
+  				'message' : message
+  			};
+  			console.log(json);
+            $.ajax({
+	            type: 'post',
+	            url: 'api/email.php',
+	            data: json,
+	            dataType: 'json',
+	            success: function(msg){
+	            	console.log(msg);
+		        },
+		        error: function(jqXHR, textStatus, errorThrown){
+		            console.log(jqXHR);
+		            console.log(textStatus);
+		            console.log(errorThrown);
+		        }
+  			});
+ 		}	
+	});
 });
 
 var CONTACTUS = {
