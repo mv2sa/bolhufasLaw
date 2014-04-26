@@ -4,7 +4,7 @@
     <title>Santanna Law Office | Immigration Law</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+<meta name="google-translate-customization" content="17b147bb8f4fa435-237d00c9144c356c-g6557982bc69f792d-f"></meta>    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
