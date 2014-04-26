@@ -467,8 +467,23 @@ main {
     font-size: 0.8em;
     line-height: 1;
 }
+#cu-emailForm > fieldset > .success {
+    display: none;
+}
+#cu-emailForm > fieldset > .success h3 {
+    color: #14bb00;
+}
+#cu-serverSide {
+    display: none;
+}
 #cu-formAddress {
     margin-top: 0.5em;
+}
+#cu-formAddress .cu-deskPhone {
+    display: none;
+}
+#cu-formAddress a {
+    color: #14bb00;
 }
 .cu-form .cu-field {
     display: block;
@@ -690,6 +705,12 @@ main {
     }
     #cu-formAddress {
         text-align: center;
+    }
+    #cu-formAddress .cu-deskPhone {
+        display: inline-block;
+    }
+    #cu-formAddress .cu-mobiPhone {
+        display: none;
     }
     .cu-labelIE9 {
         width: 50%;

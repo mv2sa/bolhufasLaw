@@ -92,14 +92,19 @@ $(document).ready(function() {
   				'subject' : subject,
   				'message' : message
   			};
-  			console.log(json);
             $.ajax({
 	            type: 'post',
 	            url: 'api/email.php',
 	            data: json,
 	            dataType: 'json',
 	            success: function(msg){
-	            	console.log(msg);
+	            	if(msg.code === 0) {
+	            		$('#cu-serverSide').html(msg.message).css('display', 'block');
+	            	} else {
+	            		$('#cu-emailForm > fieldset > .form').fadeOut(function() {
+	            			$('#cu-emailForm > fieldset > .success').fadeIn();
+	            		});
+	            	}
 		        },
 		        error: function(jqXHR, textStatus, errorThrown){
 		            console.log(jqXHR);

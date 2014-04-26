@@ -8,39 +8,49 @@
             <p id="cu-formAddress">
                 420 3rd street suite 200 <br>
                 Oakland, CA <br><br>
-                Phone:(781)488-9852 <br>
+                Phone: <a href="tel:+17814889852" class="cu-mobiPhone">(781)488-9852</a><span class="cu-deskPhone">(781)488-9852</span> <br>
                 Fax: (781)488-9855 <br>
-                Email: bholhufasLaw@yahoo.com
+                Email: <a href="mailto:natalia@santannalaw.com">natalia@santannalaw.com</a>
             </p>
             <form id="cu-emailForm" action="contact.php" method="POST">
                 <fieldset>
-                    <h3>Send Us An Email</h3>
-                    <!--[if lte IE 9]>
-                        <label for="name" class="cu-labelIE9">Name:</label>
-                    <![endif]-->
-                    <input id="cu-formName" type="text" name="name" placeholder="Name" class="cu-field" />
-                    <!--[if lte IE 9]>
-                        <label for="email" class="cu-labelIE9">E-mail:</label>
-                    <![endif]-->
-                    <input id="cu-formEmail" name="email" type="email" placeholder="Email" class="cu-field" />
-                    <select name="subject" id="cu-formDrop" class="cu-field">
-                        <option value="pick">Subject</option>
-                        <option value="Case Status">Case Status</option>
-                        <option value="Help">Help</option>
-                        <option value="Law">Law</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <div id="cu-otherSubjectWrapper">
+                    <div class="form">
+                        <h3>Send Us An Email</h3>
+                        <p id="cu-serverSide" class="error">
+                        </p>
                         <!--[if lte IE 9]>
-                            <label for="writeSubject" class="cu-labelIE9">Write your own subject:</label>
+                            <label for="name" class="cu-labelIE9">Name:</label>
                         <![endif]-->
-                        <input type="text" id="cu-otherSubject" name="writeSubject" placeholder="Write your own subject" class="cu-field" />
+                        <input id="cu-formName" type="text" name="name" placeholder="Name" class="cu-field" />
+                        <!--[if lte IE 9]>
+                            <label for="email" class="cu-labelIE9">E-mail:</label>
+                        <![endif]-->
+                        <input id="cu-formEmail" name="email" type="email" placeholder="Email" class="cu-field" />
+                        <select name="subject" id="cu-formDrop" class="cu-field">
+                            <option value="pick">Subject</option>
+                            <option value="Case Status">Case Status</option>
+                            <option value="Help">Help</option>
+                            <option value="Law">Law</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div id="cu-otherSubjectWrapper">
+                            <!--[if lte IE 9]>
+                                <label for="writeSubject" class="cu-labelIE9">Write your own subject:</label>
+                            <![endif]-->
+                            <input type="text" id="cu-otherSubject" name="writeSubject" placeholder="Write your own subject" class="cu-field" />
+                        </div>
+                        <h4><label for="message">Message</label></h4>
+                        <textarea id="cu-formMessage" type="text" name="message" value="Message" rows="7" cols="50"></textarea>
+                        <div class="cu-emailBtn">
+                            <input type="submit" value="Send Message" id="cu-send" class="cu-button" /> 
+                            <input type="submit" value="Reset" id="cu-reset" class="cu-button" />
+                        </div>
                     </div>
-                    <h4><label for="message">Message</label></h4>
-                    <textarea id="cu-formMessage" type="text" name="message" value="Message" rows="7" cols="50"></textarea>
-                    <div class="cu-emailBtn">
-                        <input type="submit" value="Send Message" id="cu-send" class="cu-button" /> 
-                        <input type="submit" value="Reset" id="cu-reset" class="cu-button" />
+                    <div class="success">
+                        <h3>
+                            Thank you for your email
+                        </h3>
+                    </div>
                 </fieldset>
             </form>
         </div>
