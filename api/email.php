@@ -16,21 +16,17 @@ if($_POST) {
     $to = $my_address;
     
     if ( $name == "") {
-        echo 'Name field is required';
-        $result = "Name field is required"; 
+        $arr = array('code' => 0, 'message' => 'Name field is required');
     } else if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/", $email)) {
-        echo 'Enter a valid email address';
-        $result = "Enter a valid email address"; 
+        $arr = array('code' => 0, 'message' => 'Enter a valid email address');
     } else if( strlen($subject) == "") {
-        echo 'Please Write Subject';
-        $result = "Please Write Subject"; 
+        $arr = array('code' => 0, 'message' => 'Please Write Subject');
     } else if ( strlen($msg) < 10 ) {
-        echo 'Write more than 10 characters';
-        $result = "Write more than 10 characters"; 
+        $arr = array('code' => 0, 'message' => 'Write more than 10 characters');
     } else {
         mail($to, $subject, $message, $headers);
         $arr = array('code' => 1, 'message' => 'success');
-        echo json_encode($arr);
     }
+    echo json_encode($arr);
 }
 ?>
