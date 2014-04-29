@@ -538,6 +538,83 @@ main {
      padding:0 17px 0 15px;
 }
 
+ /* 404 Error Page */
+
+    #error-footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: #000;
+    padding: 0.5em;
+    margin-top: 19em;
+    color: #fff;
+    text-align: center;
+    }
+
+    #error-footer .f-copy {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    #error-footer .f-copy span {
+        font-size: 1.2em;
+    }
+
+    #error-footer p,
+    #error-footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .error-wrapper.main {
+    width: 50%;
+    }
+
+    .error-wrapper {
+        position: relative;
+        width: 100%;
+        background-color: white;
+        padding: 1em;
+        margin-top: 9em;
+        border: 1px solid #eee;
+    }
+
+    .error-wrapper > div {
+        position:relative; 
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .error-wrapper .ap-headingImg {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .error-wrapper > div > p {
+        font-size: 0.8em;
+        margin-bottom: 0em;
+        text-align: center;
+    }
+
+    .error-wrapper .ap-bottomLink {
+        position: absolute;
+        text-decoration: none;
+        color: #8f0000;
+        bottom: 0.1em;
+        right: 0.1em;
+    }
+
+    .error-wrapper .ap-bottomLink:after {
+        font-family: 'FontAwesome';
+        content: '\f138';
+        padding-left: 0.5em;
+    }
+    .error-wrapper h3 {
+        text-align: center;
+        font-size: 2em;
+    }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
