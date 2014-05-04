@@ -24,6 +24,12 @@ $(document).ready(function() {
 		}
 	});
 
+	Recaptcha.create('6Lfk9PISAAAAAN7fgg4hoAcjuTHcD2QN0Fnmeddt', 'cu-recaptcha', {
+			theme: 'clean',
+			callback: Recaptcha.focus_response_field
+		}
+	);
+
 	$('#cu-reset').click(function(event) {
 		event.preventDefault();
 		$('#cu-emailForm')[0].reset();
@@ -54,6 +60,9 @@ $(document).ready(function() {
 			message : {
 				required : true,
 				minlength: 10
+			},
+			recaptcha_response_field : {
+				required : true
 			}
 		},
 		messages : {
@@ -74,10 +83,13 @@ $(document).ready(function() {
 			message : {
 				required : 'Your message seen to be missing, we would love to hear what you have to say.',
 				minlength : 'Your message is very short, could you tell us more? (minimum of 10 characters)'
+			},
+			recaptcha_response_field : {
+				required : 'Looks like you forgot to enter the captcha, we need to know you are actually human.'
 			}
 		},
   		submitHandler: function(form) {
-  			var name, email, subject, message, json;
+  			var name, email, subject, message, recaptchaResponse, recaptchaChallenge, json;
   			name = $(form).find('#cu-formName').val();
   			email = $(form).find('#cu-formEmail').val();
   			if(CONTACTUS.otherSubject) {
@@ -86,11 +98,15 @@ $(document).ready(function() {
   				subject = $(form).find('#cu-formDrop').val();
   			}
   			message = $(form).find('#cu-formMessage').val();
+  			recaptchaResponse = $(form).find('#recaptcha_response_field').val();
+  			recaptchaChallenge = $(form).find('#recaptcha_challenge_field').val();
   			json = {
   				'name' : name,
   				'email' : email,
   				'subject' : subject,
-  				'message' : message
+  				'message' : message,
+  				'recaptcha_response_field' : recaptchaResponse,
+  				'recaptcha_challenge_field' : recaptchaChallenge
   			};
             $.ajax({
 	            type: 'post',
@@ -100,6 +116,9 @@ $(document).ready(function() {
 	            success: function(msg){
 	            	if(msg.code === 0) {
 	            		$('#cu-serverSide').html(msg.message).css('display', 'block');
+	            	} else if(msg.code === 2) {
+	            		$('#cu-serverSide').html(msg.message).css('display', 'block');
+	            		Recaptcha.reload();
 	            	} else {
 	            		$('#cu-emailForm > fieldset > .form').fadeOut(function() {
 	            			$('#cu-emailForm > fieldset > .success').fadeIn();

@@ -29,8 +29,14 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
     <!--<![endif]-->
-    <script src="js/vendor/jquery.validate.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/contactUs.js"></script>
+    <?php
+        if ($page == 'contactUs') {
+            echo '<script src="js/vendor/jquery.validate.min.js"></script>';
+            echo '<script src="js/contactUs.js"></script>';
+            echo '<script src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>';
+        }
+    ?>
+
 </head>

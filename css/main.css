@@ -521,6 +521,32 @@ main {
 .cu-form h3 {
     text-align: center;
 }
+#cu-recaptcha {
+    margin: 1.5em auto;
+    width: 100%;
+    max-width: 400px;
+}
+#cu-recaptcha .recaptchatable .recaptcha_image_cell center img,
+#cu-recaptcha .recaptchatable #recaptcha_image {
+    width: 100% !important;
+    height: auto !important;
+}
+#cu-recaptcha .recaptchatable .recaptcha_image_cell center,
+#cu-recaptcha .recaptchatable .recaptcha_image_cell {
+    height: auto !important;
+}
+#cu-recaptcha .recaptcha_table {
+    width: 100% !important;
+}
+#cu-recaptcha .recaptchatable #recaptcha_response_field {
+    width: 98% !important;
+}
+#cu-recaptcha #recaptcha_logo {
+    display: none;
+}
+#cu-recaptcha .recaptcha_only_if_privacy {
+    font-size: 0.5em;
+}
 #cu-send {
     background: #217216;
 }
@@ -563,6 +589,12 @@ main {
         font-size: 125%;
     }
 
+}
+
+@media only screen and (min-width: 520px) {
+    #cu-recaptcha #recaptcha_logo {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 768px) {
