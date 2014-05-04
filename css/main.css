@@ -547,6 +547,9 @@ main {
 #cu-recaptcha .recaptcha_only_if_privacy {
     font-size: 0.5em;
 }
+iframe[src="about:blank"] {
+    display:none;
+}
 #cu-send {
     background: #217216;
 }
