@@ -25,8 +25,7 @@ $(document).ready(function() {
 	});
 
 	Recaptcha.create('6Lfk9PISAAAAAN7fgg4hoAcjuTHcD2QN0Fnmeddt', 'cu-recaptcha', {
-			theme: 'clean',
-			callback: Recaptcha.focus_response_field
+			theme: 'clean'
 		}
 	);
 

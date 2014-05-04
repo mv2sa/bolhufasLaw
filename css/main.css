@@ -162,6 +162,14 @@ main {
     height: 0.7em;
     line-height: 0.74em;
 }
+#google_translate_element {
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    height: 0.3em;
+}
+#google_translate_element > div {
+    float: right;
+}
 
 /* footer */
 
