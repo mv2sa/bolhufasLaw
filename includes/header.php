@@ -8,7 +8,7 @@
     </a>
     <h1 id="logo">
         <a href="home">
-            Santanna Law Office <span>Immigration Law</span>
+            Santanna Law Offices <span>Immigration Law</span>
         </a>
     </h1>
     <menu id="h-mainMenu" class="JQueryClear">
