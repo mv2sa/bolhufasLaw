@@ -590,6 +590,55 @@ iframe[src="about:blank"] {
      padding:0 17px 0 15px;
 }
 
+ /* 404 Error Page */
+
+.error404-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 1em 1em 4em 1em;
+    margin-top: 5.5em;
+    margin-bottom: 5.5em;
+    border: 1px solid #eee;
+}
+
+.error404-wrapper > div {
+    position:relative; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.error404-wrapper .ap-headingImg {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error404-wrapper > div > p {
+    font-size: 0.8em;
+    margin-bottom: 0em;
+    text-align: center;
+}
+
+.error404-wrapper .ap-bottomLink {
+    position: absolute;
+    text-decoration: none;
+    color: #8f0000;
+    bottom: 0.1em;
+    right: 0.1em;
+}
+
+.error404-wrapper .ap-bottomLink:after {
+    font-family: 'FontAwesome';
+    content: '\f138';
+    padding-left: 0.5em;
+}
+.error404-wrapper h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -801,6 +850,13 @@ iframe[src="about:blank"] {
 
     .f-footernav ul li {
         float: left;
+    }
+
+    /*404 Error Page*/
+
+    .error404-wrapper {
+        margin-bottom: 13.5em;
+        padding: 1em 1em 3em 1em;
     }
 
 }
