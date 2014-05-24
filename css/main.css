@@ -663,12 +663,20 @@ iframe[src="about:blank"] {
         width: 90%;
     }
 
+    #h-headerWrapper {
+        height: auto;
+    }
+
     #h-headerWrapper h1#logo {
-        width: 10em;
+        width: 100%;
         display: block;
-        float: left;
-        text-align: left;
-        margin-left: 0.2em;
+        text-align: center;
+        padding-bottom: 0.3em;
+        font-size: 1.5em;
+    }
+
+    #h-headerWrapper h1#logo a {
+        text-shadow: 0.05em 0.04em #666;
     }
 
     #h-headerWrapper:after,
@@ -690,12 +698,11 @@ iframe[src="about:blank"] {
     .csstransitions #h-headerWrapper #h-mainMenu,
     #h-headerWrapper #h-mainMenu {
         max-height: inherit;
-        width: 80%;
-        max-width: 30em;
+        width: 100%;
         font-size: 75%;
-        background-color: transparent;
+        background-color: #333;
         display: block;
-        margin: 0 auto;
+        margin: 0;
     }
 
     #h-headerWrapper #h-mainMenu li {
@@ -705,9 +712,14 @@ iframe[src="about:blank"] {
         border-bottom: none;
     }
 
+    #h-headerWrapper #h-mainMenu li:first-child a {
+        border-left: none;
+    }
+
     #h-headerWrapper #h-mainMenu li a {
-        line-height: 4em;
-        border-left: 1px #333 solid;
+        line-height: 2em;
+        border-left: 1px #888 solid;
+        border-top: 1px #888 solid;
     }
 
     #h-headerWrapper #h-mainMenu li:last-child a {
@@ -857,27 +869,6 @@ iframe[src="about:blank"] {
     .error404-wrapper {
         margin-bottom: 13.5em;
         padding: 1em 1em 3em 1em;
-    }
-
-}
-
-@media only screen and (min-width: 940px) {
-
-    .csstransitions #h-headerWrapper #h-mainMenu,
-    #h-headerWrapper #h-mainMenu {
-        font-size: 100%;
-    }
-
-    #h-headerWrapper #h-mainMenu li a {
-        line-height: 3em;
-    }
-
-}
-
-@media only screen and (min-width: 1240px) {
-
-    #h-headerWrapper h1#logo {
-        position: absolute;
     }
 
 }
