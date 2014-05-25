@@ -164,11 +164,8 @@ main {
 }
 #google_translate_element {
     margin-top: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.5em;
     height: 0.3em;
-}
-#google_translate_element > div {
-    float: right;
 }
 
 /* footer */
@@ -221,6 +218,11 @@ main {
 }
 
 .ma-wrapper .ma-headingImg {
+    width: 100%;
+}
+
+.ma-wrapper .ma-imgLink {
+    display: block;
     width: 100%;
 }
 
