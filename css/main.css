@@ -277,6 +277,15 @@ main {
     margin-bottom: 0em;
 }
 
+.ap-wrapper > div ul {
+    font-size: 0.8em;
+}
+
+.ap-wrapper > div ul ul {
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
 .ap-wrapper .ap-bottomLink {
     position: absolute;
     text-decoration: none;
