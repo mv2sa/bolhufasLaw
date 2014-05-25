@@ -7,7 +7,7 @@
         &#8801;
     </a>
     <h1 id="logo">
-        <a href="home">
+        <a href="home" class="notranslate">
             Santanna Law Offices <span>Immigration Law</span>
         </a>
     </h1>
