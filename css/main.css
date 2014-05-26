@@ -231,18 +231,29 @@ main {
     margin-bottom: 2.5em;
 }
 
-.ma-wrapper .ma-bottomLink {
-    position: absolute;
-    text-decoration: none;
-    color: #8f0000;
-    bottom: 0.1em;
-    right: 0.1em;
-}
-
-.ma-wrapper .ma-bottomLink:after {
+.ma-wrapper .ma-bottomLink:after,
+.ap-wrapper .ap-link:after {
     font-family: 'FontAwesome';
     content: '\f138';
     padding-left: 0.5em;
+}
+
+.ap-wrapper .ap-link,
+.ma-wrapper .ma-bottomLink {
+    text-decoration: none;
+    color: #8f0000;
+}
+
+.ap-wrapper .ap-link {
+    display: block;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.ma-wrapper .ma-bottomLink {
+    position: absolute;
+    bottom: 0.1em;
+    right: 0.1em;
 }
 
 /* Attorney Profile Page */
