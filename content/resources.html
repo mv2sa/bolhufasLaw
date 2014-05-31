@@ -1,7 +1,14 @@
 <h2 class="ap-title">Resources</h2>
 <article class="ap-wrapper">
     <div>
-        <img class="s-headingImg" src="img/heading4.jpg" alt="Girl holding the globe" />
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="img/heading4-900.jpg, img/heading4-1200.jpg 2x" media="(min-width: 900px)">
+            <source srcset="img/heading4-600.jpg, img/heading4-900.jpg 2x" media="(min-width: 600px)">
+            <source srcset="img/heading4-300.jpg, img/heading4-600.jpg 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img class="s-headingImg" srcset="img/heading4-300.jpg, img/heading4-600.jpg 2x" alt="Girl holding the globe" />
+        </picture>
         <h3 id="s-titleChild">United States Citizenship and Immigration Services (USCIS)</h3>
         <p>
             <a href="https://egov.uscis.gov/cris/Dashboard/CaseStatus.do" target="_blank" class="ap-link">USCIS Case Status Check</a>

@@ -238,6 +238,11 @@ main {
     padding-left: 0.5em;
 }
 
+.ap-wrapper a,
+.ma-wrapper a {
+    color: #009900;
+}
+
 .ap-wrapper .ap-link,
 .ma-wrapper .ma-bottomLink {
     text-decoration: none;
@@ -511,9 +516,6 @@ main {
 }
 #cu-formAddress .cu-deskPhone {
     display: none;
-}
-#cu-formAddress a {
-    color: #14bb00;
 }
 .cu-form .cu-field {
     display: block;

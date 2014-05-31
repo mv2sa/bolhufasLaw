@@ -1,7 +1,14 @@
 <h2 class="ap-title">Services</h2>
 <article class="ap-wrapper">
     <div>
-        <img class="s-headingImg" src="img/heading2.jpg" alt="American Flag and documents" />
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="img/heading2-900.jpg, img/heading2-1200.jpg 2x" media="(min-width: 900px)">
+            <source srcset="img/heading2-600.jpg, img/heading2-900.jpg 2x" media="(min-width: 600px)">
+            <source srcset="img/heading2-300.jpg, img/heading2-600.jpg 2x">
+            <!--[if IE 9]></video><![endif]-->
+            <img class="s-headingImg" srcset="img/heading2-300.jpg, img/heading2-600.jpg 2x" alt="American Flag and documents" />
+        </picture>
         <h3 id="s-titleChild">Deportation Defense</h3>
         <p>
             Santanna Law Offices represent individuals facing removal proceedings. We will explore any applicable defenses to removal, including but not limited to:

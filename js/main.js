@@ -1,9 +1,11 @@
+var email1 = 'mailto:natalia@',
+	email2 = 'santannalaw.com';
 $(document).ready(function() {
 	$('#h-mobileButton').click(function(event) {
 		event.preventDefault();
 		GLOBALCONTROLS.mobileMenu();
 	});
-
+	$('.email').attr('href', email1 + email2);
 	$('#globalBackToTop a').click(function(event) {
 		event.preventDefault();
 		GLOBALCONTROLS.backToTop();

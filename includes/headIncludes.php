@@ -2,8 +2,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Santanna Law Office | Immigration Law</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="At Santanna Law Offices, we represent detained and non-detained individuals in diverse immigration matters. Contact us for a legal consultation.">
+    <meta name="keywords" content="immigration, law, santanna, natalia, office, citizenship, appeals, attorney">
     <meta name="google-translate-customization" content="97780874fc735aab-80397fadca97d164-ge3cd0643912ea04b-13"></meta>    
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/vendor/modernizr-2.6.2.mv2sa.custom.min.js"></script>
-
+    <script src='js/vendor/picturefill.min.js' async></script>
     <!--[if lt IE 9]>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

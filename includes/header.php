@@ -3,36 +3,38 @@
 <![endif]-->
 
 <header id="h-headerWrapper">
-    <a id="h-mobileButton" href="#" alt="Open Menu">
-        &#8801;
-    </a>
-    <h1 id="logo">
-        <a href="home" class="notranslate">
-            Santanna Law Offices <span>Immigration Law</span>
+    <nav>
+        <a id="h-mobileButton" href="#" alt="Open Menu">
+            &#8801;
         </a>
-    </h1>
-    <menu id="h-mainMenu" class="JQueryClear">
-        <li>
-            <a href="attorney-profile">
-                Attorney Profile
+        <h1 id="logo">
+            <a href="home" class="notranslate">
+                Santanna Law Offices <span>Immigration Law</span>
             </a>
-        </li>
-        <li>
-            <a href="services">
-                Services
-            </a>
-        </li>
-        <li>
-            <a href="resources">
-                Resources
-            </a>
-        </li>
-        <li>
-            <a href="contact-us">
-                Contact Us
-            </a>
-        </li>
-    </menu>
+        </h1>
+        <ul id="h-mainMenu" class="JQueryClear">
+            <li>
+                <a href="attorney-profile">
+                    Attorney Profile
+                </a>
+            </li>
+            <li>
+                <a href="services">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="resources">
+                    Resources
+                </a>
+            </li>
+            <li>
+                <a href="contact-us">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <div id="google_translate_element" class="clearFloat">
 </div>
