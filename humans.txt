@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Lead Designer and Full Stack Developer: Marcos Santanna
+	Contact: marcosv.santanna@hotmail.com
+	From: Lansing, MI, USA
+
+	UI developer: Ashley Mark
+	Contact: shalmark@frontier.com
+	From: Lansing, MI, USA
+
+# TECHNOLOGY COLOPHON
+
+    PHP, HTML5, CSS3, JS
+    jQuery, Modernizr, recaptcha, picturefill

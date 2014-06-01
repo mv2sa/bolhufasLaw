@@ -1,0 +1,11 @@
+# robotstxt.org/
+
+User-agent: *
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+Disallow: /api/
+Disallow: /includes/
+Disallow: /prototype/
+Disallow: /content/
