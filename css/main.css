@@ -686,11 +686,13 @@ main {
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
 }
+
 #globalBackToTop a {
     text-decoration: none;
     color: #8f0000;
     font-size: 2em;
 }
+
 #globalBackToTop a:before {
     content: "\f0aa";
     display: inline-block;
@@ -700,11 +702,13 @@ main {
     height: 0.7em;
     line-height: 0.74em;
 }
+
 #google_translate_element {
     margin-top: 0.5em;
     margin-left: 0.5em;
     height: 0.3em;
 }
+
 
 /* footer */
 
@@ -757,6 +761,7 @@ main {
 
 .ma-wrapper .ma-headingImg {
     width: 100%;
+    border: 1px solid #eee;
 }
 
 .ma-wrapper .ma-imgLink {
@@ -824,6 +829,7 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #eee;
 }
 
 .ap-wrapper > div > p {
@@ -865,25 +871,6 @@ main {
 
 /* Services Page */
 
-.ap-wrapper.main {
-    width: 50%;
-}
-
-.ap-wrapper {
-    position: relative;
-    width: 100%;
-    background-color: white;
-    padding: 1em;
-    margin: 2em auto 0;
-    border: 1px solid #eee;
-}
-
-.ap-wrapper > div {
-    position:relative; 
-    height: 100%;
-    overflow: hidden;
-}
-
 .ap-wrapper .s-headingImg {
     width: 100%;
     display: block;
@@ -891,56 +878,14 @@ main {
     margin-right: auto;
 }
 
-.ap-wrapper > div > p {
-    font-size: 0.8em;
-    margin-bottom: 0em;
-}
-
-.ap-wrapper .ap-bottomLink {
-    position: absolute;
-    text-decoration: none;
-    color: #8f0000;
-    bottom: 0.1em;
-    right: 0.1em;
-}
-
-.ap-wrapper .ap-bottomLink:after {
-    font-family: 'FontAwesome';
-    content: '\f138';
-    padding-left: 0.5em;
-}
 #s-titleChild {
     text-align: center;
     font-size: 1.5em;
 }
-.ap-title {
-    text-align: center;
-    font-size: 2.5em;
-}
-
 
 
 /* Resources Page */
 
-.ap-wrapper.main {
-    width: 50%;
-}
-
-.ap-wrapper {
-    position: relative;
-    width: 100%;
-    background-color: white;
-    padding: 1em;
-    margin: 2em auto 0;
-    border: 1px solid #eee;
-}
-
-.ap-wrapper > div {
-    position:relative; 
-    height: 100%;
-    overflow: hidden;
-}
-
 .ap-wrapper .s-headingImg {
     width: 100%;
     display: block;
@@ -948,49 +893,13 @@ main {
     margin-right: auto;
 }
 
-.ap-wrapper > div > p {
-    font-size: 0.8em;
-    margin-bottom: 0em;
-}
-
-.ap-wrapper .ap-bottomLink {
-    position: absolute;
-    text-decoration: none;
-    color: #8f0000;
-    bottom: 0.1em;
-    right: 0.1em;
-}
-
-.ap-wrapper .ap-bottomLink:after {
-    font-family: 'FontAwesome';
-    content: '\f138';
-    padding-left: 0.5em;
-}
 #s-titleChild {
     text-align: center;
     font-size: 1.5em;
 }
-.ap-title {
-    text-align: center;
-    font-size: 2.5em;
-}
 
 
 /* Contact Us Page */
-.ap-wrapper {
-    position: relative;
-    width: 100%;
-    background-color: white;
-    padding: 1em;
-    margin: 2em auto 0;
-    border: 1px solid #eee;
-}
-
-.ap-wrapper > div {
-    position:relative; 
-    height: 100%;
-    overflow: hidden;
-}
 
 .ap-wrapper .s-headingImg {
     width: 100%;
@@ -999,33 +908,12 @@ main {
     margin-right: auto;
 }
 
-.ap-wrapper > div > p {
-    font-size: 0.8em;
-    margin-bottom: 0em;
-}
-
-.ap-wrapper .ap-bottomLink {
-    position: absolute;
-    text-decoration: none;
-    color: #8f0000;
-    bottom: 0.1em;
-    right: 0.1em;
-}
-
-.ap-wrapper .ap-bottomLink:after {
-    font-family: 'FontAwesome';
-    content: '\f138';
-    padding-left: 0.5em;
-}
-.ap-title {
-    text-align: center;
-    font-size: 2.5em;
-}
 #cu-map {
     width: 100%;
     height: 20em;
     border: 1px #bbb dashed;
 }
+
 #cu-mapParking {
     font-size: 0.8em;
     line-height: 0.8;
@@ -1033,6 +921,7 @@ main {
     display: block;
     color: #14bb00;
 }
+
 #cu-emailForm p.error {
     text-align: center;
     display: block;
@@ -1040,30 +929,38 @@ main {
     font-size: 0.8em;
     line-height: 1;
 }
+
 #cu-emailForm > fieldset > .success {
     display: none;
 }
+
 #cu-emailForm > fieldset > .success h3 {
     color: #14bb00;
 }
+
 #cu-serverSide {
     display: none;
 }
+
 #cu-formAddress {
     margin-top: 0.5em;
 }
+
 #cu-formAddress .cu-deskPhone {
     display: none;
 }
+
 .cu-form .cu-field {
     display: block;
     width: 100%;
     margin-bottom: 0.5em;
     padding: 0.1em;
 }
+
 #cu-otherSubjectWrapper {
     display: none;
 }
+
 .cu-form .cu-button {
     width: 100%;
     font-size: 1em; 
@@ -1075,6 +972,7 @@ main {
     text-align: center;
     color: #fff;
 }
+
 .cu-form textarea {
     width: 100%;
     height: 10em;
@@ -1085,58 +983,74 @@ main {
     border: 1px solid #e8e8e8;
     resize:vertical;
 }
+
 .cu-form .cu-emailBtn {
     margin-top: 2em;
 }
+
 .cu-form h3 {
     text-align: center;
 }
+
 #cu-recaptcha {
     margin: 1.5em auto;
     width: 100%;
     max-width: 400px;
 }
+
 #cu-recaptcha .recaptchatable .recaptcha_image_cell center img,
 #cu-recaptcha .recaptchatable #recaptcha_image {
     width: 100% !important;
     height: auto !important;
 }
+
 #cu-recaptcha .recaptchatable .recaptcha_image_cell center,
 #cu-recaptcha .recaptchatable .recaptcha_image_cell {
     height: auto !important;
 }
+
 #cu-recaptcha .recaptcha_table {
     width: 100% !important;
 }
+
 #cu-recaptcha .recaptchatable #recaptcha_response_field {
     width: 98% !important;
 }
+
 #cu-recaptcha #recaptcha_logo {
     display: none;
 }
+
 #cu-recaptcha .recaptcha_only_if_privacy {
     font-size: 0.5em;
 }
+
 iframe[src="about:blank"] {
     display:none;
 }
+
 #cu-send {
     background: #217216;
 }
+
 #cu-reset {
     background: #D3352A;
 }
 
+
 /*Footer Navigation*/
+
 .f-footernav {
     position:relative; 
     width:100%;
 }
+
 .f-footernav ul {
     position:relative; 
     margin: 0 auto 1em; 
     padding:0; 
 }
+
 .f-footernav ul li {
     padding:0; 
     margin:0; 
@@ -1144,6 +1058,7 @@ iframe[src="about:blank"] {
     height:30px; 
     display:block;
 }
+
 .f-footernav ul li a {
      color: #fff; 
      text-decoration:none; 
@@ -1152,7 +1067,8 @@ iframe[src="about:blank"] {
      padding:0 17px 0 15px;
 }
 
- /* 404 Error Page */
+
+/* 404 Error Page */
 
 .error404-wrapper {
     position: relative;
