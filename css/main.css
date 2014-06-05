@@ -572,6 +572,22 @@ body {
     height: 0;
 }
 
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
 
 /* ==========================================================================
    Mobile 320px
